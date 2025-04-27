@@ -443,7 +443,8 @@ class Graph:
                         nxt.append(x)
 
             courses.append(sem)
-            to_take += nxt
+            nxt.sort()
+            to_take = nxt + to_take
 
         return courses
 
